@@ -1,9 +1,8 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from 'assets/banner-thumb.png';
-import ShapeLeft from 'assets/shape-left.png';
-import ShapeRight from 'assets/shape-right.png';
+import { Container, Box, Heading, Text, Button } from 'theme-ui';
+import {Image} from "theme-ui"
 
 export default function Banner() {
   return (
@@ -19,7 +18,7 @@ export default function Banner() {
           
         </Box>
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerImg} alt='banner' />
+          <Image src="/banner-thumb.png" alt='banner'/>
         </Box>
       </Container>
     </section>
@@ -40,7 +39,7 @@ const styles = {
       height: '100%',
       width: '100%',
       zIndex: -1,
-      backgroundImage: `url(${ShapeLeft})`,
+      backgroundImage: `url(/shape-left.png)`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom left',
       backgroundSize: '30%',
@@ -54,7 +53,7 @@ const styles = {
       height: '100%',
       width: '100%',
       zIndex: -1,
-      backgroundImage: `url(${ShapeRight})`,
+      backgroundImage: `url(/shape-right.png)`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom right',
       backgroundSize: '30%',

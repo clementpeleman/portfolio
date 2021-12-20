@@ -1,9 +1,9 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Container, Flex, Button } from 'theme-ui';
-import { keyframes } from '@emotion/core';
+import { keyframes } from '@emotion/react';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
-import LogoH16 from 'assets/H16_LOGO_BLAUW.svg';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 
@@ -11,7 +11,7 @@ export default function Header({ className }) {
   return (
       <header sx={styles.header} className={className} id='header'>
         <Container sx={styles.container}>
-          <Logo src={LogoH16} />
+          <Logo src='/H16_LOGO_BLAUW.svg' />
           <Flex as='nav' sx={styles.nav}>
             {menuItems.map((menuItem, i) => (
               <Link

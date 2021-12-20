@@ -1,3 +1,4 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { Link } from '@theme-ui/components';
 import { FaExpeditedssl } from 'react-icons/fa';
@@ -24,8 +25,8 @@ export default function FeatureCard({
           showIndicators={true}
           showStatus={false}>
           
-          {src.map(img => 
-            <Image sx={styles.img} src={img.url} key={img.title} />
+          {src.map((img, i) => 
+            <Image sx={styles.img} src={img.url} key={i} />
           )}
           </Carousel>
         <Heading sx={styles.wrapper.subTitle}>{text}</Heading>

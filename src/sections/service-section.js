@@ -1,13 +1,14 @@
+/** @jsxRuntime classic */
 import React, { useState } from 'react';
 /** @jsx jsx */
 import { jsx, Container, Box, Grid, Text, Heading, Button, Image } from 'theme-ui';
-import { keyframes } from '@emotion/core';
+import { keyframes } from '@emotion/react';
 import TextFeature from 'components/text-feature';
 import ModalVideo from 'react-modal-video';
 import { IoIosPlay } from 'react-icons/io';
 
-import ServiceThumb from 'assets/service-thumb.png';
-import shapePattern from 'assets/shape-pattern1.png';
+const ServiceThumb = '/service-thumb.png';
+const shapePattern = '/shape-pattern1.png';
 
 import Smart from 'assets/services/smart.svg';
 import Secure from 'assets/services/secure.svg';
