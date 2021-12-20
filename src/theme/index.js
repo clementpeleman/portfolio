@@ -12,12 +12,15 @@ export default {
 
     // highlight	a background color for highlighting text
     modes: {  
-      dark: {
-        text: '#fff',
-        background: '#000',
-        primary: '#0cf',
-        secondary: '#09c',
-        muted: '#111',
+      light: {
+        text: '#000',
+        background: '#fff',
+        primary: '#0e468c',
+        secondary: '#e0eff0',
+        muted: '#bce1e3',
+        accent: '#d83415', // a contrast color for emphasizing UI
+        heading: "ffffff",
+        background: "#ffffff",
       },
     },
   },
