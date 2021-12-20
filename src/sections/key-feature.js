@@ -70,10 +70,10 @@ const styles = {
       '35px 0',
       null,
       '40px 40px',
-      '50px 60px',
+      '50px 40px',
       '30px',
       '50px 40px',
-      '55px 90px',
+      '55px 40px',
     ],
     gridTemplateColumns: [
       'repeat(1,1fr)',

@@ -44,7 +44,7 @@ const styles = {
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom left',
       backgroundSize: '30%',
-      opacity: '100%'
+      opacity: '30%'
     },
     '&::after': {
       position: 'absolute',
@@ -58,7 +58,7 @@ const styles = {
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom right',
       backgroundSize: '30%',
-      opacity: '100%'
+      opacity: '30%'
     },
     container: {
       minHeight: 'inherit',
@@ -76,6 +76,8 @@ const styles = {
     imageBox: {
       justifyContent: 'center',
       textAlign: 'center',
+      width:'75%',
+      alignSelf: 'center',
       display: 'inline-flex',
       mb: [5, null, null, null, null, null, null, 5],
       img: {

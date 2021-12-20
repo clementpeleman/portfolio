@@ -25,9 +25,9 @@ export default function IndexPage({projecten}) {
           {/* <ServiceSection />
           <CoreFeature />
           <WorkFlow />
-          <Package />
+          <Package /> */}
           <TeamSection />
-          <TestimonialCard /> */}
+          {/* <TestimonialCard /> */}
         </Layout>
     </ThemeProvider>
   );

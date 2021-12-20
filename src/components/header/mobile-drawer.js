@@ -13,13 +13,14 @@ const social = [
     icon: <FaFacebookF />,
   },
   {
-    path: '/',
+    path: '/https://www.instagram.com/h16.be',
     icon: <FaInstagram />,
   },
 ];
 
 export default function MobileDrawer() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+  const toggleHandler=() => setIsDrawerOpen((prevState) => !prevState)
   return (
    <Drawer
    width="320px"
@@ -47,7 +48,7 @@ export default function MobileDrawer() {
             duration={500}
             key={i}
             >
-              {menuItem.label}
+              <div onClick={toggleHandler}>{menuItem.label}</div>
             </ Link>
           ))}
         </Box>

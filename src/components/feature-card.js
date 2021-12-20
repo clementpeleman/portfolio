@@ -3,7 +3,7 @@ import { Link } from '@theme-ui/components';
 import { FaExpeditedssl } from 'react-icons/fa';
 import { jsx, Image, Box, Heading, Text } from 'theme-ui';
 import { useState, useEffect } from 'react'
-
+import {FaMapMarkerAlt} from 'react-icons/fa'
 import { Carousel } from 'react-responsive-carousel';
 
 export default function FeatureCard({
@@ -16,7 +16,7 @@ export default function FeatureCard({
   return (
     <Box sx={styles.card}>           
       <Box sx={styles.wrapper}>
-        <Heading sx={styles.wrapper.title}>{title}</Heading>
+        <Heading sx={styles.wrapper.title}>{title} </Heading>
           <Carousel
           showThumbs={false}
           emulateTouch={true}
@@ -42,6 +42,12 @@ const styles = {
     mb: -1,
   },
 
+  icon: {
+    position: 'relative',
+    top: '3px',
+    mr: '5px',
+  },
+
   img: {
     width: ['100%', null, null, '100%', '100%', '100%'],
     height: 'auto',
@@ -55,18 +61,27 @@ const styles = {
     flexDirection: 'column',
     mt: '-5px',
     title: {
-      fontSize: [3, 5],
+      fontSize: [3, 6],
       color: 'heading_secondary',
       lineHeight: 1.4,
       fontWeight: 700,
       mb: ['10px', null, '15px'],
+      // p: ['5px','10px'],
+      color: 'black',
+      borderRadius: '5px',
+      width: 'fit-content'
     },
 
     subTitle: {
       fontSize: [1, 3],
-      fontWeight: 400,
-      lineHeight: '1.9',
-      mt:['5px', '10px'],
+      fontWeight: 500 ,
+      lineHeight: '1.3',
+      mt:['15px', '10px'],
+      p: ['5px','10px'],
+      color: 'white',
+      backgroundColor:'accent',
+      borderRadius: '5px',
+      width: 'fit-content'
     },
   },
 };
