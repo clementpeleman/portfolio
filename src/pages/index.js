@@ -39,6 +39,7 @@ export async function getStaticProps() {
     query: gql`
       query{
         projecten {
+          slug
           titel
           afbeelding {
             url
@@ -57,8 +58,8 @@ export async function getStaticProps() {
   const {projecten} = data;
   return {
     props: {
-      projecten,
-      revalidate: 60,
-    }
+      projecten
+    },
+    revalidate: 60
   }
 }

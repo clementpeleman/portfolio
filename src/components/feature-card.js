@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { Link } from '@theme-ui/components';
+import  Link  from 'next/link';
 import { FaExpeditedssl } from 'react-icons/fa';
 import { jsx, Image, Box, Heading, Text } from 'theme-ui';
 import { useState, useEffect } from 'react'
@@ -11,6 +11,7 @@ export default function FeatureCard({
   src,
   title,
   text,
+  slug
   
 }) {
 
@@ -25,11 +26,13 @@ export default function FeatureCard({
           showIndicators={true}
           showStatus={false}>
           
-          {src.map((img, i) => 
+          {src.map((img, i) =>    
             <Image sx={styles.img} src={img.url} key={i} />
           )}
           </Carousel>
+          <Link href={`/projecten/${slug}`}>
         <Heading sx={styles.wrapper.subTitle}>{text}</Heading>
+        </Link>
       </Box>
     </Box>
     
@@ -82,7 +85,8 @@ const styles = {
       color: 'white',
       backgroundColor:'accent',
       borderRadius: '5px',
-      width: 'fit-content'
+      width: 'fit-content',
+      cursor: 'pointer'
     },
   },
 };

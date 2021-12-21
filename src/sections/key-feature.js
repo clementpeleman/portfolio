@@ -54,7 +54,8 @@ export default function KeyFeature({Projecten}) {
           key={project.titel} 
           title={project.titel} 
           src={project.afbeelding}
-          text={project.beschrijving} /> )}
+          text={project.beschrijving}
+          slug={project.slug} /> )}
       </Grid>
     </Container>
    </section>
