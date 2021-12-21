@@ -56,7 +56,7 @@ export async function getStaticProps() {
   const {projecten} = data;
   return {
     props: {
-      projecten: await getProductFromDatabas()
+      projecten
     },
     revalidate: 60,
   }
