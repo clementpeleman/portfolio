@@ -15,12 +15,14 @@ import TestimonialCard from '../sections/testimonial';
 import client from '../../apolloClient';
 import { gql } from '@apollo/client';
 
-export default function IndexPage({projecten}) {
+export default function IndexPage({projecten, updatedAt }) {
+  const timeString = new Date(updatedAt).toLocaleTimeString();
   return (
     <ThemeProvider theme={theme}>
         <Layout>
           <SEO title="H16 | Oosterzele" />
           <Banner />
+          <p>{timeString}</p>
           <KeyFeature  Projecten={projecten}/>
           <div>{projecten.map((project, i) => (<div key={i}>{project.titel}</div>))}</div>
           {/* <ServiceSection />
@@ -58,7 +60,8 @@ export async function getStaticProps() {
   const {projecten} = data;
   return {
     props: {
-      projecten
+      projecten,
+      updatedAt: Date.now()
     },
     revalidate: 60
   }
