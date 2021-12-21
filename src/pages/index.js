@@ -59,7 +59,6 @@ export async function getStaticProps() {
   return {
     props: {
       projecten
-    },
-    revalidate: 60
+    }
   }
 }
