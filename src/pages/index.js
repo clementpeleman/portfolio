@@ -22,6 +22,7 @@ export default function IndexPage({projecten}) {
           <SEO title="H16 | Oosterzele" />
           <Banner />
           <KeyFeature  Projecten={projecten}/>
+          <div>{projecten.map((project, i) => (<div key={i}>{project.titel}</div>))}</div>
           {/* <ServiceSection />
           <CoreFeature />
           <WorkFlow />
