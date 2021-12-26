@@ -23,6 +23,7 @@ export default function IndexPage({projecten, updatedAt }) {
           <Banner />
           <p>{timeString}</p>
           <KeyFeature  Projecten={projecten}/>
+          <div>{projecten.map((project, i) => (<div key={i}>{project.titel}</div>))}</div>
           {/* <ServiceSection />
           <CoreFeature />
           <WorkFlow />
