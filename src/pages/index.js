@@ -21,6 +21,7 @@ export default function IndexPage({projecten, updatedAt }) {
         <Layout>
           <SEO title="H16 | Oosterzele" />
           <Banner />
+          <p>{timeString}</p>
           <KeyFeature  Projecten={projecten}/>
           {/* <ServiceSection />
           <CoreFeature />
@@ -62,6 +63,7 @@ export async function getStaticProps() {
   return {
     props: {
       projecten,
+      updatedAt: Date.now()
     },
     revalidate: 60
   }
