@@ -14,16 +14,13 @@ import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
 import { GraphQLClient } from 'graphql-request';
 
-export default function IndexPage({projecten, updatedAt }) {
-  const timeString = new Date(updatedAt).toLocaleTimeString();
-  return (
+export default function IndexPage({projecten }) {
+    return (
     <ThemeProvider theme={theme}>
         <Layout>
           <SEO title="H16 | Oosterzele" />
           <Banner />
-          <p>{timeString}</p>
           <KeyFeature  Projecten={projecten}/>
-          <div>{projecten.map((project, i) => (<div key={i}>{project.titel}</div>))}</div>
           {/* <ServiceSection />
           <CoreFeature />
           <WorkFlow />
@@ -64,7 +61,6 @@ export async function getStaticProps() {
   return {
     props: {
       projecten,
-      updatedAt: Date.now()
     },
     revalidate: 60
   }
