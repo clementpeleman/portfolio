@@ -1,6 +1,5 @@
-import { gql } from '@apollo/client'
 import {useRouter} from 'next/router'
-import client from '../../../apolloClient'
+import { GraphQLClient, gql } from 'graphql-request';
 
 export default function ProjectenPagina({project}) {
     return (
@@ -11,15 +10,18 @@ export default function ProjectenPagina({project}) {
 }
 
 export async function getStaticPaths() {
-    const {data} = await client.query({
-        query: gql`
+  const graphcms = new GraphQLClient(
+    'https://api-eu-central-1.graphcms.com/v2/ckx0a5ow80od401xpen297noz/master'
+  );
+    const data = await graphcms.request(
+        `
         query{
           projecten {
             slug
           }
         }
       `
-    })
+    )
 
     const {projecten} = data;
     const paths = projecten.map( project => ({
@@ -29,9 +31,12 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({params}) {
+  const graphcms = new GraphQLClient(
+    'https://api-eu-central-1.graphcms.com/v2/ckx0a5ow80od401xpen297noz/master'
+  );
     const slug = params.slug[0];
-    const {data} = await client.query({
-      query: gql`
+    const content =  
+      gql`
         query ProjectBySlug($slug: String!){
           projecten (where: {slug : $slug}){
             titel
@@ -47,9 +52,14 @@ export async function getStaticProps({params}) {
             }
           }
         }
-      `,
-      variables: {slug}
-    })
+      `
+      
+
+    const variables = {
+      slug: slug
+    }
+
+    const data = await graphcms.request(content, variables)
     
     const {projecten} = data;
     const project = projecten[0];

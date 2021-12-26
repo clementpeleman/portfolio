@@ -12,8 +12,7 @@ import WorkFlow from '../sections/workflow';
 import Package from '../sections/package';
 import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
-import client from '../../apolloClient';
-import { gql } from '@apollo/client';
+import { GraphQLClient } from 'graphql-request';
 
 export default function IndexPage({projecten, updatedAt }) {
   const timeString = new Date(updatedAt).toLocaleTimeString();
@@ -22,9 +21,7 @@ export default function IndexPage({projecten, updatedAt }) {
         <Layout>
           <SEO title="H16 | Oosterzele" />
           <Banner />
-          <p>{timeString}</p>
           <KeyFeature  Projecten={projecten}/>
-          <div>{projecten.map((project, i) => (<div key={i}>{project.titel}</div>))}</div>
           {/* <ServiceSection />
           <CoreFeature />
           <WorkFlow />
@@ -37,8 +34,12 @@ export default function IndexPage({projecten, updatedAt }) {
 }
 
 export async function getStaticProps() {
-  const {data} = await client.query({
-    query: gql`
+  const graphcms = new GraphQLClient(
+    'https://api-eu-central-1.graphcms.com/v2/ckx0a5ow80od401xpen297noz/master'
+  );
+  
+    const data = await graphcms.request(
+      `
       query{
         projecten {
           slug
@@ -55,13 +56,12 @@ export async function getStaticProps() {
         }
       }
     `
-  })
+  )
   
   const {projecten} = data;
   return {
     props: {
       projecten,
-      updatedAt: Date.now()
     },
     revalidate: 60
   }
