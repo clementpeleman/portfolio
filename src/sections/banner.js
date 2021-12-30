@@ -107,7 +107,7 @@ const styles = {
     imageBox: {
       justifyContent: 'center',
       textAlign: 'center',
-      width:'120%',
+      width:'100%',
       alignSelf: 'flex-end',
       display: 'inline-flex',
       mb: [7, null, null, null, null, null, null, 5],
