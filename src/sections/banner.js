@@ -2,7 +2,8 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Button } from 'theme-ui';
-import {Image} from "theme-ui"
+import Image from "next/image"
+import bannerimg from '../../public/kolibri.png'
 
 export default function Banner() {
   return (
@@ -18,7 +19,7 @@ export default function Banner() {
           
         </Box>
         <Box sx={styles.banner.imageBox}>
-          <Image src="/banner-thumb.png" alt='banner'/>
+          <Image src={bannerimg} alt='banner'/>
         </Box>
       </Container>
     </section>
@@ -57,13 +58,43 @@ const styles = {
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom right',
       backgroundSize: '30%',
-      opacity: '30%'
+      opacity: '20%',
     },
     container: {
       minHeight: 'inherit',
       display: 'flex',
-      flexDirection: 'column',
+      flexDirection: ['column', 'column', 'column', 'row', 'row', 'row', 'row', 'row'],
       justifyContent: 'center',
+      maxWidth: [
+        '100%',
+        '100vw',
+        '100vw',
+        '100vw',
+        '100vw',
+        '100vw',
+        '100vw',
+        '100vw',
+      ],
+      pl: [
+        4,
+        4,
+        4,
+        'calc((100vw - 780px)/2 + 21.5px) !important',
+        'calc((100vw - 1020px)/2 + 21.5px) !important',
+        'calc((100vw - 1200px)/2 + 21.5px) !important',
+        null,
+        'calc((100vw - 1310px)/2 + 21.5px) !important',
+      ],
+      pr: [
+        0,
+        0,
+        0,
+        '0px !important',
+        '0px !important',
+        '0px !important',
+        null,
+        '0px !important',
+      ],
     },
     contentBox: {
       width: ['100%', '90%', '535px', null, '57%', '60%', '68%', '75%'],
@@ -71,19 +102,41 @@ const styles = {
       textAlign: '',
       mb: ['40px', null, null, null, null, 10],
       mt: ['40px', null, null, null, null, 7],
+      whiteSpace: 'normal',
     },
     imageBox: {
       justifyContent: 'center',
       textAlign: 'center',
-      width:'75%',
-      alignSelf: 'center',
+      width:'120%',
+      alignSelf: 'flex-end',
       display: 'inline-flex',
-      mb: [5, null, null, null, null, null, null, 5],
+      mb: [7, null, null, null, null, null, null, 5],
+      mt: [
+        -6,
+        -6,
+        -6,
+        null,
+        null,
+        null,
+        null,
+        null,
+      ],
+      maxWidth: [
+        '100%',
+        '100%',
+        '100%',
+        '100%',
+        '100%',
+        '100%',
+        '100%',
+        '100%',
+      ],
       img: {
         position: 'relative',
         height: ['auto', 'auto'],
         width:'100%',
         borderRadius: '5px',
+        transform: 'scaleX(-1)'
       },
     },
   },
