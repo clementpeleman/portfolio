@@ -11,7 +11,7 @@ export default function ProjectenPagina({project}) {
 
 export async function getStaticPaths() {
   const graphcms = new GraphQLClient(
-    'https://api-eu-central-1.graphcms.com/v2/ckx0a5ow80od401xpen297noz/master'
+    'https://api-eu-central-1.graphcms.com/v2/cl3lxtp3y1g6g01xi5s1ef7ty/master'
   );
     const data = await graphcms.request(
         `
@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params}) {
   const graphcms = new GraphQLClient(
-    'https://api-eu-central-1.graphcms.com/v2/ckx0a5ow80od401xpen297noz/master'
+    'https://api-eu-central-1.graphcms.com/v2/cl3lxtp3y1g6g01xi5s1ef7ty/master'
   );
     const slug = params.slug[0];
     const content =  

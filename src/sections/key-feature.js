@@ -46,8 +46,8 @@ export default function KeyFeature({Projecten}) {
    <section sx={{variant: 'section.keyFeature'}} id="projecten">
     <Container>
       <SectionHeader
-      slogan="Onze projecten"
-      title="Bekijk onze projecten hieronder" />
+      slogan="Projecten"
+      title="Bekijk mijn projecten hieronder" />
 
       <Grid sx={styles.grid}>
           {Projecten.map(project => <FeatureCard 

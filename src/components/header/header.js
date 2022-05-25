@@ -11,7 +11,7 @@ export default function Header({ className }) {
   return (
       <header sx={styles.header} className={className} id='header'>
         <Container sx={styles.container}>
-          <Logo src='/H16_LOGO_BLAUW.svg' />
+          <h1>Clément Peleman</h1>
           <Flex as='nav' sx={styles.nav}>
             {menuItems.map((menuItem, i) => (
               <Link
@@ -27,9 +27,7 @@ export default function Header({ className }) {
               </ Link>
             ))}
           </Flex>
-          <Button className="donate__btn" variant="secondary" aria-label="contact">
-            Contacteer ons
-          </Button>
+          
           <MobileDrawer />
 
         </Container>

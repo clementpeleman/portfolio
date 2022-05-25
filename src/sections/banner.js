@@ -11,15 +11,13 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Wij geven een nieuwe invulling aan huizen en gronden
+            student industrieel ontwerp @
           </Heading>
           <Text as='p' variant='heroSecondary'>
-            Wij geven een nieuwe invulling aan huizen en gronden
+             UGent campus Kortrijk
           </Text>
-          
         </Box>
         <Box sx={styles.banner.imageBox}>
-          <Image src={bannerimg} alt='banner'/>
         </Box>
       </Container>
     </section>
@@ -28,7 +26,7 @@ export default function Banner() {
 
 const styles = {
   banner: {
-    pt: ['140px', '145px', '155px', '170px', null, null, '180px', '215px'],
+    pt: [null],
     pb: [2, null, 0, null, 2, 0, null, 5],
     position: 'relative',
     zIndex: 2,
@@ -44,8 +42,8 @@ const styles = {
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom left',
       backgroundSize: '30%',
-      opacity: '30%'
-    },
+      opacity: '0%'
+    },  
     '&::after': {
       position: 'absolute',
       content: '""',
@@ -58,10 +56,10 @@ const styles = {
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom right',
       backgroundSize: '30%',
-      opacity: '20%',
+      opacity: '0%',
     },
     container: {
-      minHeight: 'inherit',
+      minHeight: '100vh',
       display: 'flex',
       flexDirection: ['column', 'column', 'column', 'row', 'row', 'row', 'row', 'row'],
       justifyContent: 'center',
@@ -73,7 +71,7 @@ const styles = {
         '100vw',
         '100vw',
         '100vw',
-        '100vw',
+        '100%',
       ],
       pl: [
         4,
@@ -101,25 +99,19 @@ const styles = {
       mx: '0',
       textAlign: '',
       mb: ['40px', null, null, null, null, 10],
-      mt: ['40px', null, null, null, null, 7],
+      mt: ['30vh'],
       whiteSpace: 'normal',
+      overflow: 'visible',
     },
     imageBox: {
       justifyContent: 'center',
       textAlign: 'center',
-      width:'100%',
+      width:'70%',
       alignSelf: 'flex-end',
       display: 'inline-flex',
       mb: [7, null, null, null, null, null, null, 5],
       mt: [
-        -6,
-        -6,
-        -6,
-        null,
-        null,
-        null,
-        null,
-        null,
+       "100px"
       ],
       maxWidth: [
         '100%',

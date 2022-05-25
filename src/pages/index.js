@@ -18,15 +18,15 @@ export default function IndexPage({projecten }) {
     return (
     <ThemeProvider theme={theme}>
         <Layout>
-          <SEO title="H16 | Oosterzele" />
+          <SEO title="Clément Peleman" />
           <Banner />
           <KeyFeature  Projecten={projecten}/>
           {/* <ServiceSection />
           <CoreFeature />
           <WorkFlow />
-          <Package /> */}
+          <Package />
           <TeamSection />
-          {/* <TestimonialCard /> */}
+          <TestimonialCard /> */}
         </Layout>
     </ThemeProvider>
   );
@@ -34,7 +34,7 @@ export default function IndexPage({projecten }) {
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
-    'https://api-eu-central-1.graphcms.com/v2/ckx0a5ow80od401xpen297noz/master'
+    'https://api-eu-central-1.graphcms.com/v2/cl3lxtp3y1g6g01xi5s1ef7ty/master'
   );
   
     const data = await graphcms.request(

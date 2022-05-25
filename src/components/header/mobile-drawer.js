@@ -9,11 +9,11 @@ import menuItems from './header.data';
 
 const social = [
   {
-    path: '/',
+    path: '/https://www.facebook.com/clementpeleman',
     icon: <FaFacebookF />,
   },
   {
-    path: '/https://www.instagram.com/h16.be',
+    path: '/https://www.instagram.com/clementpeleman',
     icon: <FaInstagram />,
   },
 ];
