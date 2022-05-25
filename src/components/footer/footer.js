@@ -11,7 +11,7 @@ export default function Footer() {
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
           
-            <h4>Rights reserved @ Clément Peleman</h4>
+            <h4 sx={styles.copyright}>Rights reserved @ Clément Peleman</h4>
           
         </Box>
       </Container>
@@ -59,6 +59,7 @@ const styles = {
     copyright: {
       fontSize: [1, '15px'],
       width: '100%',
+      fontWeight:"100",
     },
   },
 };

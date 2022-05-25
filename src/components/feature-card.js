@@ -24,7 +24,8 @@ export default function FeatureCard({
           emulateTouch={true}
           infiniteLoop={true}
           showIndicators={true}
-          showStatus={false}>
+          showStatus={false}
+          dynamicHeight={true}>
           
           {src.map((img, i) =>    
             <Image sx={styles.img} src={img.url} key={i} />
@@ -43,13 +44,15 @@ const styles = {
   card: {
     display: 'flex',
     alignItems: 'flex-start',
-    mb: -1,
+    mb: 10,
+    
   },
 
   icon: {
     position: 'relative',
     top: '3px',
     mr: '5px',
+    
   },
 
   img: {
@@ -58,18 +61,24 @@ const styles = {
     flexShrink: 0,
     mr: 0,
     ml: 0,
+    
   },
   wrapper: {
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    mt: '-5px',
+    mt: '150px',
+    p: "20px",
+    
+    borderRadius: "5px",
+    boxShadow: "rgba(149, 157, 165, 0.12) 0px 10px 24px",
+
     title: {
       fontSize: [3, 6],
       color: 'heading_secondary',
       lineHeight: 1.4,
       fontWeight: 700,
-      mb: ['10px', null, '15px'],
+      mb: ['20px', null, '25px'],
       // p: ['5px','10px'],
       color: 'black',
       borderRadius: '5px',
@@ -78,13 +87,13 @@ const styles = {
 
     subTitle: {
       fontSize: [1, 3],
-      fontWeight: 500 ,
+      fontWeight: 400 ,
       lineHeight: '1.3',
-      mt:['15px', '10px'],
+      mt:['30', '30px'],
       p: ['5px','10px'],
-      color: 'white',
-      backgroundColor:'accent',
-      borderRadius: '5px',
+      color: 'black',
+      backgroundColor:'white',
+      borderRadius: '0x',
       width: 'fit-content',
       cursor: 'pointer'
     },
