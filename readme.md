@@ -1,4 +1,4 @@
-# himatt.com
+# clement peleman
 
 Personal portfolio made with [Jekyll](https://jekyllrb.com/), deployed via [Netlify](https://netlify.com/)
 
