@@ -23,7 +23,7 @@ long-title: Clement Peleman Industrial Creativity
 email: clementpeleman@outlook.com
 description: "The selected portfolio of Ghent based embedded product designer Clement Peleman"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://clementpeleman.com" # the base hostname & protocol for your site
+url: "https://clementpeleman.netlify.app" # the base hostname & protocol for your site
 timezone: Europe/Brussels
 year: 2024
 start-year: 2019
@@ -70,8 +70,8 @@ compress_html: # http://jch.penibelst.de/
 navigation:
   - title: Projects
     url: /
-  - title: Fonts
-    url: /fonts
+  - title: Sides
+    url: /Sides
   - title: About
     url: /about
   - title: Contact
@@ -86,7 +86,7 @@ collections:
     permalink: /projects/:path/
   fonts:
     output: true
-    permalink: /fonts/:path/
+    permalink: /Sides/:path/
 
 defaults:
   - scope:
@@ -96,6 +96,6 @@ defaults:
       layout: "project"
   - scope:
       path: ""
-      type: "fonts"
+      type: "Sides"
     values:
-      layout: "font"
+      layout: "Sides"
