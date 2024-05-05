@@ -59,6 +59,17 @@ $thumb-animation-ease-out: ease-in-out;
     margin-top: 5vh;
     margin-bottom: 4rem;
   }
+  .projects-span{
+    text-decoration: underline;
+    // text-decoration-style: double;
+    text-decoration-thickness: 4px;
+    text-decoration-color: var(--color-action);
+    color: white
+  }
+  .projects-span:hover{
+    text-decoration: none;
+    color: var(--color-action);
+  }
 }
 
 .project-listing {
