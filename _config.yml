@@ -86,7 +86,7 @@ collections:
     permalink: /projects/:path/
   fonts:
     output: true
-    permalink: /Sides/:path/
+    permalink: /sides/:path/
 
 defaults:
   - scope:
@@ -96,6 +96,6 @@ defaults:
       layout: "project"
   - scope:
       path: ""
-      type: "Sides"
+      type: "sides"
     values:
-      layout: "Sides"
+      layout: "sides"
