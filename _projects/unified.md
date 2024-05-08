@@ -1,6 +1,6 @@
 ---
-date: 2016-02-20
-published: true
+date: 2024-02-20
+published: false
 title: "Unified Icon Set"
 description: "An extensive icon system with a unified style"
 categories: icons
