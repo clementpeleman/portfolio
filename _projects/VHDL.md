@@ -12,13 +12,7 @@ time_period: 2024
 thumbnail: "/projects/VHDL/servocontroller_thumbnail.jpeg"
 
 intro: |
-  Unified was created in response to the ever-growing demand for a set of
-  universally appropriate icons suitable for projects I work on, both
-  commercially and personally.
-
-  This icon set is an ongoing project with new icons being introduced
-  constantly, to date there are around 500 icons, not all of which are available
-  for purchase yet.
+  This project showcases the design and implementation of a Pulse-Width Modulation (PWM) controller using VHDL for an FPGA (Field-Programmable Gate Array). The goal is to generate precise PWM signals that can be used to control various devices such as motors, LEDs, or power supplies.
 
 content_layout:
   - section_layout: 2col
