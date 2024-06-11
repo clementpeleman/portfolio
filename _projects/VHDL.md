@@ -9,7 +9,7 @@ media:
 ownership: Personal
 client:
 time_period: 2024
-thumbnail: "/projects/VHDL/servocontroller_thumbnail.jpeg"
+thumbnail: "/projects/VHDL/thumbnail.png"
 
 intro: |
   This project showcases the design and implementation of a Pulse-Width Modulation (PWM) controller using VHDL for an FPGA (Field-Programmable Gate Array). The goal is to generate precise PWM signals that can be used to control various devices such as motors, LEDs, or power supplies.
