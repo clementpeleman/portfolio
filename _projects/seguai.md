@@ -30,7 +30,7 @@ content_layout:
           An example with the subjects: coffee, comic books, trains
         description: Landing page
         description: Example
-        url: '/projects/seguai/landingpage.png'
+        url: '/projects/seguai/example.png'
         width:
         height:
 
