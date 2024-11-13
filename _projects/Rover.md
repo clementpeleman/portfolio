@@ -9,7 +9,7 @@ media:
 ownership: Personal
 client:
 time_period: 2023
-thumbnail: "/projects/ROVER/1.png"
+thumbnail: "/projects/ROVER/thumbnail.png"
 
 intro: |
   The ROVER project showcases an autonomous, tracked construction vehicle designed to streamline material handling on construction sites. With its robust build and advanced navigation capabilities, ROVER provides a reliable, hands-free solution for transporting heavy loads in rugged terrains.
