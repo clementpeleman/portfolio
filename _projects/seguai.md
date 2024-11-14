@@ -1,5 +1,5 @@
 ---
-date: 2023-08-11
+date: 2024-02-24
 published: true
 title: "Seguai"
 description: "An AI application that automatically generates segues for content creators"
