@@ -1,5 +1,5 @@
 ---
-date: 2023-08-08
+date: 2024-02-24
 published: true
 title: "Multi-Jet Fusion add-on"
 description: "A depowdering device for removing the parts from the powder cake"
