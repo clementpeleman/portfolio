@@ -13,6 +13,7 @@ thumbnail: "/projects/tipple/thumbnail.jpg"
 
 intro: |
   [Tipple AI](https://tipple-umber.vercel.app/) is an innovative platform that leverages artificial intelligence to simplify and enhance the wine pairing experience. By analyzing dish ingredients and flavor profiles, Tipple AI provides instant, personalized wine recommendations, empowering businesses and individuals to create perfect pairings with ease.
+  Check the blog post [here](https://tipple-umber.vercel.app/blog/introducing-tipple).
 
 content_layout:
   - section_layout: 1col-narrow
