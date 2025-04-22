@@ -42,10 +42,10 @@
   --inner-padding: #{rem(16px)};
   --inner-padding-horizontal: #{rem(10px)};
 
-  --color-primary: 255,255,255;
-  --color-secondary: 33,33,33;
+  --color-primary: #cacdc3;
+  --color-secondary: #030805;
   --color-tertiary: 0, 0, 255;
-  --color-action: #cacdc3;
+  --color-action: #51db8e;
 
   --color-highlight-rgb: var(--color-tertiary);
   --color-highlight: rgb(var(--color-highlight-rgb));
