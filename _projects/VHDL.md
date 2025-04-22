@@ -1,6 +1,6 @@
 ---
 date: 2024-03-08
-published: true
+published: false
 title: "FPGA PWM controller in VHDL"
 description: "A servocontroller written in VHDL on the Basys3 board"
 categories: Programming
