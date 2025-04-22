@@ -25,7 +25,7 @@ description: "The selected portfolio of Ghent based embedded product designer Cl
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://clementpeleman.netlify.app" # the base hostname & protocol for your site
 timezone: Europe/Brussels
-year: 2024
+year: 2025
 start-year: 2019
 sitemap: true
 
