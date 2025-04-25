@@ -1,0 +1,42 @@
+---
+layout: page
+title: Side Projects
+permalink: /sides/
+priority: 0.8
+
+projects:
+
+---
+
+<!-- - title: 
+description: 
+image: 
+date: 
+
+- title: Home Automation
+description: Developed a smart home system using ESP32 and MQTT
+image: /images/sides/home-automation.jpg
+date: 2023
+
+- title: 3D Printed Drone
+description: Designed and built a custom drone with printed parts
+image: /images/sides/drone.jpg
+date: 2023 -->
+
+<div class="sides-wrapper">
+  <div class="sides-grid">
+    <h3 class="sides-intro type-level-1">Coming soon</h3>
+    {% for project in page.projects %}
+      <div class="project-card">
+        <div class="project-image">
+          <img src="{{ project.image }}" alt="{{ project.title }}">
+        </div>
+        <div class="project-info">
+          <h3 class="project-title type-level-3">{{ project.title }}</h3>
+          <p class="project-description">{{ project.description }}</p>
+          <span class="project-date">{{ project.date }}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

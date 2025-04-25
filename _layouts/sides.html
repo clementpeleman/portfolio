@@ -1,0 +1,28 @@
+---
+layout: default
+title-class: sides
+---
+
+<div class="sides-wrapper">
+  <div class="sides-intro-wrapper">
+    <p class="sides-intro type-level-1">Side Projects</p>
+  </div>
+
+  <div class="sides">
+    {% for side in site.fonts reversed %}
+      <article class="side-listing">
+        <div class="thumbnail-wrapper">
+          <a href="{{ side.url | prepend: site.baseurl }}">
+            <div class="thumbnail-description-wrapper">
+              <img src="{{ side.thumbnail | prepend: site.image_serve_path }}" alt="{{ side.title }}" width="600" height="450">
+              <p class="thumbnail-description">
+                <span>{{ side.description }}</span>
+              </p>
+            </div>
+            <h3 aria-hidden="true">{{ side.title }}</h3>
+          </a>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>
