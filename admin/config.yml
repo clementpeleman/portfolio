@@ -19,11 +19,11 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Published", name: "published", widget: "boolean", default: true}
-      - {label: "Categories", name: "categories", widget: "string", hint: "Comma-separated tags"}
-      - {label: "Disciplines", name: "disciplines", widget: "string"}
-      - {label: "Time Period", name: "time_period", widget: "string"}
+      # - {label: "Categories", name: "categories", widget: "string", hint: "Comma-separated tags"}
+      # - {label: "Disciplines", name: "disciplines", widget: "string"}
+      # - {label: "Time Period", name: "time_period", widget: "string"}
       - {label: "Thumbnail", name: "thumbnail", widget: "image"}
-      - {label: "Project Type", name: "project_type", widget: "string", required: false}
+      # - {label: "Project Type", name: "project_type", widget: "string", required: false}
       - {label: "Technologies", name: "technologies", widget: "list", required: false}
       - {label: "Duration", name: "duration", widget: "string", required: false}
       - {label: "Status", name: "status", widget: "select", options: ["Planning", "In Progress", "Completed", "On Hold"], required: false}
