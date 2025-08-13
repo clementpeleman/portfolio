@@ -78,6 +78,13 @@
 //   //Styles
   .image-wrapper {
     .image-wrapper img { width: 100%; }
+    
+    // Limit image size for better readability
+    img {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+    }
 
     figcaption {
       margin-top: rem(12px);

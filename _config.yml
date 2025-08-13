@@ -106,4 +106,4 @@ defaults:
       path: ""
       type: "sides"
     values:
-      layout: "sides"
+      layout: "side-project"
