@@ -71,7 +71,7 @@ navigation:
   - title: Projects
     url: /
   - title: Sides
-    url: /Sides
+    url: /sides
   - title: About
     url: /about
   - title: Contact
@@ -86,6 +86,9 @@ collections:
     permalink: /projects/:path/
   fonts:
     output: true
+    permalink: /typography/:path/
+  sides:
+    output: true
     permalink: /sides/:path/
 
 defaults:
@@ -94,6 +97,11 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  - scope:
+      path: ""
+      type: "fonts"
+    values:
+      layout: "sides"
   - scope:
       path: ""
       type: "sides"

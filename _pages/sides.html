@@ -1,42 +1,34 @@
 ---
-layout: page
-title: Side Projects
+layout: default
+title: Sides
+title_override: Clement Peleman - Side Projects
 permalink: /sides/
 priority: 0.8
-
-projects:
-
+class: projects-page
 ---
 
-<!-- - title: 
-description: 
-image: 
-date: 
+<div class="projects-intro-wrapper">
+  <p class="projects-intro type-level-1">Side Projects</p>
+</div>
 
-- title: Home Automation
-description: Developed a smart home system using ESP32 and MQTT
-image: /images/sides/home-automation.jpg
-date: 2023
+<div class="projects-intro-wrapper">
+  <p class="projects-intro type-level-3">Experimental projects, hardware builds, and creative explorations beyond client work.</p>
+</div>
 
-- title: 3D Printed Drone
-description: Designed and built a custom drone with printed parts
-image: /images/sides/drone.jpg
-date: 2023 -->
-
-<div class="sides-wrapper">
-  <div class="sides-grid">
-    <h3 class="sides-intro type-level-1">Coming soon</h3>
-    {% for project in page.projects %}
-      <div class="project-card">
-        <div class="project-image">
-          <img src="{{ project.image }}" alt="{{ project.title }}">
+<div id="sides" class="projects">
+{% for side in site.sides reversed %}
+  <article class="project-listing">
+    <div class="thumbnail-wrapper">
+      <a href="{{ side.url | prepend: site.baseurl }}">
+        <div class="thumbnail-description-wrapper">
+          <img src="{{ side.thumbnail | prepend: site.image_serve_path }}" alt="{{ side.title }}" width="600" height="450">
+          <p class="thumbnail-description">
+            <span>{{ side.description }}</span>
+          </p>
         </div>
-        <div class="project-info">
-          <h3 class="project-title type-level-3">{{ project.title }}</h3>
-          <p class="project-description">{{ project.description }}</p>
-          <span class="project-date">{{ project.date }}</span>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
+        <h3 aria-hidden="true">{{ side.title }}</h3>
+      </a>
+    </div>
+  </article>
+{% endfor %}
 </div>

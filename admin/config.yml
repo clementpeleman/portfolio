@@ -1,0 +1,55 @@
+backend:
+  name: git-gateway
+  branch: master
+
+# Uncomment below to enable drafts
+# publish_mode: editorial_workflow
+
+media_folder: "images/sides"
+public_folder: "/images/sides"
+
+collections:
+  - name: "sides"
+    label: "Side Projects"
+    folder: "_sides"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+      - {label: "Categories", name: "categories", widget: "string", hint: "Comma-separated tags"}
+      - {label: "Disciplines", name: "disciplines", widget: "string"}
+      - {label: "Time Period", name: "time_period", widget: "string"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+      - {label: "Project Type", name: "project_type", widget: "string", required: false}
+      - {label: "Technologies", name: "technologies", widget: "list", required: false}
+      - {label: "Duration", name: "duration", widget: "string", required: false}
+      - {label: "Status", name: "status", widget: "select", options: ["Planning", "In Progress", "Completed", "On Hold"], required: false}
+      - {label: "GitHub URL", name: "github_url", widget: "string", required: false}
+      - {label: "Demo URL", name: "demo_url", widget: "string", required: false}
+      - {label: "Introduction", name: "intro", widget: "markdown"}
+      - label: "Content Layout"
+        name: "content_layout"
+        widget: "list"
+        types:
+          - label: "Text Section"
+            name: "text"
+            widget: "object"
+            fields:
+              - {label: "Section Layout", name: "section_layout", widget: "hidden", default: "text"}
+              - {label: "Content", name: "content", widget: "markdown"}
+          - label: "Image Section"
+            name: "image"
+            widget: "object"
+            fields:
+              - {label: "Section Layout", name: "section_layout", widget: "select", options: ["1col-narrow", "2col", "3col"]}
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                fields:
+                  - {label: "Image", name: "url", widget: "image"}
+                  - {label: "Caption", name: "caption", widget: "text", required: false}
+                  - {label: "Description", name: "description", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
