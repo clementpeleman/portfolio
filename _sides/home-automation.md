@@ -6,7 +6,7 @@ description: "IoT system using ESP32 and MQTT for home monitoring and control"
 categories: hardware, iot, web
 disciplines: "Embedded Systems, Web Development"
 time_period: "2023"
-thumbnail: "/images/projects/esp32/esp32-v2.png"
+thumbnail: "/projects/esp32/esp32-v2.png"
 
 project_type: "Hardware + Software"
 technologies: ["ESP32", "MQTT", "Node.js", "React", "3D Printing"]

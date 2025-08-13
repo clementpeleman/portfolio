@@ -6,7 +6,7 @@ description: "Fully custom quadcopter with 3D printed frame and flight controlle
 categories: hardware, 3d-printing, embedded
 disciplines: "Mechanical Design, Embedded Systems"
 time_period: "2023"
-thumbnail: "/images/projects/h16/thumbnail.png"
+thumbnail: "/projects/h16/thumbnail.png"
 
 project_type: "Hardware Design"
 technologies: ["3D Printing", "Arduino", "IMU Sensors", "PID Control"]

@@ -5,7 +5,9 @@
       "Bash(pkill:*)",
       "Bash(taskkill:*)",
       "Bash(mkdir:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(find:*)",
+      "Bash(bundle exec:*)"
     ],
     "deny": [],
     "ask": []

@@ -16,19 +16,24 @@ class: projects-page
 </div>
 
 <div id="sides" class="projects">
-{% for side in site.sides reversed %}
-  <article class="project-listing">
-    <div class="thumbnail-wrapper">
-      <a href="{{ side.url | prepend: site.baseurl }}">
-        <div class="thumbnail-description-wrapper">
-          <img src="{{ side.thumbnail | prepend: site.image_serve_path }}" alt="{{ side.title }}" width="600" height="450">
-          <p class="thumbnail-description">
-            <span>{{ side.description }}</span>
-          </p>
-        </div>
-        <h3 aria-hidden="true">{{ side.title }}</h3>
-      </a>
-    </div>
-  </article>
-{% endfor %}
+{% if site.sides.size == 0 %}
+  <p class="projects-intro type-level-3">No side projects yet. Add some projects to the _sides directory!</p>
+{% else %}
+  {% for side in site.sides reversed %}
+    <article class="project-listing">
+      <div class="thumbnail-wrapper">
+        <a href="{{ side.url | prepend: site.baseurl }}">
+          <div class="thumbnail-description-wrapper">
+            <img src="{{ side.thumbnail | prepend: site.image_serve_path }}" alt="{{ side.title }}" width="600" height="450">
+            <p class="thumbnail-description">
+              <span>{{ side.description }}</span>
+            </p>
+          </div>
+          <h3 aria-hidden="true">{{ side.title }}</h3>
+        </a>
+      </div>
+    </article>
+  {% endfor %}
+{% endif %}
 </div>
+
