@@ -18,7 +18,7 @@ description: "Brief project description for listing page"
 categories: hardware, web, embedded
 disciplines: "Web Development, Hardware"
 time_period: "2024"
-thumbnail: "/images/sides/project-name/thumbnail.jpg"
+thumbnail: "/sides/project-name/thumbnail.jpg"
 
 project_type: "Hardware + Software"
 technologies: ["ESP32", "React", "Node.js"]
@@ -66,7 +66,7 @@ Once deployed to Netlify:
 ## CMS Features
 
 - **Rich Text Editor**: Write content with markdown preview
-- **Image Upload**: Drag & drop image uploads to `/images/sides/`
+- **Image Upload**: Drag & drop image uploads to `/sides/`
 - **Content Layout Builder**: Add text sections and image galleries
 - **Metadata Management**: Categories, technologies, status tracking
 - **Draft Mode**: Save drafts before publishing
@@ -74,7 +74,7 @@ Once deployed to Netlify:
 
 ## Image Guidelines
 
-- Store project images in `/images/sides/project-name/`
+- Store project images in `/sides/project-name/`
 - Thumbnails should be 600x450px for grid consistency  
 - Use descriptive filenames
 - Supported: JPG, PNG, SVG
