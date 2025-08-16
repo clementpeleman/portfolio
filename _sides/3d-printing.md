@@ -11,5 +11,6 @@ content_layout:
     images:
       - url: /sides/img_4153.jpeg
       - url: /sides/2006109452.avif
+    section_layout: 2col
 ---
 It still baffles me how easy and far the 3D printing industry has gotten in such little time.
