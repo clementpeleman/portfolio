@@ -20,5 +20,6 @@ content_layout:
   - type: image
     images:
       - url: /sides/onyxconnectorsilentdemo.gif
+    section_layout: 1col-narrow
 ---
 Learned a lot about vector databases, embeddings, document retrieval, ... (Mostly RAG pipelines).
