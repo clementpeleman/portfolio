@@ -3,7 +3,7 @@ title: "Onyx: AI knowledge base"
 description: Lots of experience in finetuning and setting up self-hosted instances of Onyx.
 date: 2025-08-15T22:37:00.000+02:00
 published: true
-thumbnail: /images/sides/onyxconnectorsilentdemo.gif
+thumbnail: /sides/onyxconnectorsilentdemo.gif
 intro: >-
   Lots of experience in finetuning and setting up self-hosted instances of Onyx.
   Onyx is an open-source AI platform connected to your company's docs, apps, and
@@ -19,6 +19,6 @@ intro: >-
 content_layout:
   - type: image
     images:
-      - url: /images/sides/onyxconnectorsilentdemo.gif
+      - url: /sides/onyxconnectorsilentdemo.gif
 ---
 Learned a lot about vector databases, embeddings, document retrieval, ... (Mostly RAG pipelines).
