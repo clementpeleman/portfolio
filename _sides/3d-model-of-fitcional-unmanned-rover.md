@@ -4,7 +4,7 @@ description: 3D Model of Fitcional Unmanned Rover project. Made using car
   modelling clay and 3D printing of wheels.
 date: 2025-08-14T10:18:00.000+02:00
 published: true
-thumbnail: /sides/img_2490.jpeg
+thumbnail: /images/sides/naamloos.jpg
 intro: 3D Model of Fitcional Unmanned Rover project. Made using car modelling
   clay and 3D printing of wheels.
 content_layout:
