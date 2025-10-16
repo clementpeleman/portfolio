@@ -20,7 +20,7 @@ content_layout:
       - caption: |
           The landing page is designed by me.
         description: Landing page
-        url: '/projects/lvq/landingpage.png'
+        url: '/projects/lvq/thumbnail.png'
         width:
         height:
 
