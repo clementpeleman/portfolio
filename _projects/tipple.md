@@ -1,7 +1,7 @@
 ---
 date: 2025-02-20
 published: true
-title: "Tipple website"
+title: "Tipple - Web development"
 description: "Wine pairing and managing service for restaurant owners."
 categories: webdevelopment
 disciplines: Web Development
