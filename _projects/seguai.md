@@ -1,6 +1,6 @@
 ---
 date: 2023-08-08
-published: true
+published: false
 title: "Seguai"
 description: "An AI application that automatically generates segues for content creators"
 categories: web dev
