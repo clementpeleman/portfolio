@@ -13,6 +13,8 @@ thumbnail: "/projects/lvq/thumbnail.png"
 
 intro: |
   [Le vin quotidien](https://lvq.wine) is a wine shop based in Oosterzele. The site was built with Webflow, and I implemented custom code for features such as the top banner and the shopping cart logic. 
+
+content_layout:
   - section_layout: 1col-narrow
     images:
       - caption: |
